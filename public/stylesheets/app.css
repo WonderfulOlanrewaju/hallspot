@@ -1,0 +1,78 @@
+body{
+        background: #003973;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #E5E5BE, #003973);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #E5E5BE, #003973); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        margin-bottom:75px;
+}
+
+.img-thumbnail img{
+    width:100%;
+}
+
+#flash-message {
+        margin-top:20px;
+}
+
+.img-thumbnail,  #more-info-margin{
+        margin-bottom: 15px;
+}
+#go-home {
+        margin-bottom: 40px;
+}
+#footer{
+        height:75px;
+        margin-top:100px;
+        bottom:0;
+        position: absolute;
+        width:100%;
+}
+
+#footer-text {
+        padding-top:30px;
+}
+
+#form{
+        background-color: rgb(255, 255, 255);
+        width:60%;
+        Margin: 80px auto;
+        padding: 40px;
+        border-radius: 5px;
+        border : 2px solid #b3e6ff;
+}
+
+/* #form-head {
+        text-align: center;
+        margin-bottom:10px;
+} */
+
+#show-row1 {
+        margin: 80px 80px;
+}
+
+#edit-form, .inline{
+        display: inline;
+}
+
+.submit-button {
+        text-align:center;
+}
+
+.left-tab {
+        margin-bottom: 80px;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+#show-right {
+        margin-bottom: 50px;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}

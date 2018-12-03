@@ -1,0 +1,28 @@
+<% include ../partials/header %>
+<div class="container">
+    <form id="form" name="form" method="post" action="/halls" enctype="multipart/form-data">
+        <h1 id="form-head">Add a New Hall</h1>
+        <div class="form-group">
+            <label for="hallname">Hallname</label>
+            <input class="form-control" name="hallname" id="hallname" type="text" placeholder="hallname" required>           
+        </div>
+        <div class="form-group">
+            <label for="image">Image</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+        </div>
+        <div class="form-group">
+                <label for="price">Price</label>
+                <input class="form-control" name="price" type="number" placeholder="hall price" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Hall description</label>
+            <textarea name="description" class="form-control" required></textarea>
+        </div>
+        <div class="submit-button">
+            <input type="submit" class="btn btn-dark"  name="submit" value="Add Hall">
+        </div>
+    </form>
+</div>
+
+
+<% include ../partials/footer %>

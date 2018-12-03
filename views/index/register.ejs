@@ -1,0 +1,46 @@
+<% include ../partials/header %> 
+    <div class="row">
+        <form id="form" name="form" method="post" action="/register" enctype="multipart/form-data">
+            <legend id="form-head" class="text-center">Register</legend>
+            <label for="username">Username</label>
+            <div class="form-group">
+                <input class="form-control" name="username" id="username" type="text" placeholder="username" required>
+            </div>
+            <label for="firstName">Firstname</label>
+            <div class="form-group">
+                <input class="form-control" name="firstName"  type="text" placeholder="e.g John" required>
+            </div>
+            <label for="lastName">Lastname</label>
+            <div class="form-group">
+                <input class="form-control" name="lastName"  type="text" placeholder="e.g Doe" required>
+            </div>
+            <label for="email">Email</label>
+            <div class="form-group">
+                <input class="form-control" name="email"  type="email" placeholder="johndoe@here.com" required>
+            </div>
+            <label for="avatar">Profile Picture</label>
+            <div class="form-group">
+                <input name="avatar" type="file" accept="image/*" required id="avatar">
+            </div>
+            <label for="password">Password</label>
+            <div class="form-group">
+                <input class="form-control" name="password" id="password" type="password" placeholder="password" required>
+            </div>
+            <label for="confirm_password">Confirm Password</label>
+            <div class="form-group">
+                <input class="form-control" type="password" name="confirm_password" id="confirm_password" placeholder="confirm password"
+                    required>
+                <span id='message'></span>
+            </div>
+            <div class="form-group">
+                <input class="form-control" name="isAdmin" type="text" placeholder="Admincode" >
+            </div>
+            <div class="submit-button">
+                <input type="submit" class="btn btn-dark custom-button float-left" name="submit" value="register">
+                <span class="float-right">Already a user? <a href="/login">Login</a></span>
+            </div>
+        </form>
+    </div>
+</div>
+
+<% include ../partials/footer %>

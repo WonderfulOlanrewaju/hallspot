@@ -1,0 +1,35 @@
+<% include ../partials/header.ejs%>
+    <div class="jumbotron text-center">
+        <h1>Welcome to Hallspot</h1>
+        <h4>See our collection of halls from all over the world. </h4>
+        <a href="/halls/new" class="btn btn-secondary">Add new Hall</a>
+    </div>
+
+    <div class="row">
+        <% halls.forEach(function(hall){ %>
+        <div class="col-md-3 col-sm-6">
+            <div class="img-thumbnail">
+                <img src="<%=hall.image%>">
+                <div class="lead text-center">
+                    <h5>
+                        <%= hall.title %>
+                    </h5>
+                    <h6> 
+                        #<%=hall.price %>
+                    </h6>
+                </div>
+                <div class="text-center">
+                    <a id="more-info-margin" class="btn btn-secondary btn-sm" href="/halls/<%= hall._id%>">More Info</a>
+                </div>
+            </div>
+        </div>
+        <% }) %>
+    </div>
+</div>
+
+<div class="text-center">
+    <a id="go-home" class="btn btn-secondary btn-sm" href="/">Go to home page</a>
+</div>
+
+
+<% include ../partials/footer.ejs%>

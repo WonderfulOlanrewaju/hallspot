@@ -1,0 +1,22 @@
+<% include ../partials/header %>
+<div class="container">
+    <form id="form" action="/halls/<%=hall._id%>/comments" method="POST">
+        <h3 id="form-head">Add Comment</h3>
+        <div class="form-group">
+            <label for="comment">Comment</label>
+            <textarea name="comment[text]" class="form-control" placeholder="your comment" required></textarea>
+        </div>
+        <div class="submit-button">
+            
+            <input type="submit" class="btn btn-dark" value="Add Comment">
+        </div>
+    </form>
+</div>
+
+<!-- Footer Navbar -->
+<nav id="footer" class="bg-dark fixed-bottom">
+    <div id="footer-text" class="text-center text-light">
+        &copy Hallspot 2018. All rights reserved.
+    </div>
+</nav>
+<% include ../partials/footer %>

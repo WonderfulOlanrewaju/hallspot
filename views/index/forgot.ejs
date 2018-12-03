@@ -1,0 +1,24 @@
+<% include ../partials/header %>
+<div class="container">
+    <div class="col-md-12">
+        <form id="form" method="post" action="/forgot">
+            <legend>Login</legend>
+            <label for="email">Email:</label>
+            <div class="form-group">
+                <input class="form-control" name="email" type="email" placeholder="e.g johndoe@gmail.com" required>
+            </div>
+            <div class="submit-button">
+                <input type="submit" class="btn btn-dark submit-button" name="submit" value="Reset">
+                <span> <a href="/register">Register</a> | <a href="/login">Have an Account?</a></span>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Footer Navbar -->
+<nav id="footer" class="bg-dark fixed-bottom">
+    <div id="footer-text" class="text-center text-light">
+        &copy Hallspot 2018. All rights reserved. <a href="/">Home</a> | <a href="/halls">Halls</a>
+    </div>
+</nav>
+<% include ../partials/footer %>

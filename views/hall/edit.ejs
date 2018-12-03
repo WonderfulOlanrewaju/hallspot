@@ -1,0 +1,26 @@
+<% include ../partials/header %>
+<div class="container">
+    <form id="form" method="POST" action="/halls/<%=hall._id%>?_method=PUT" enctype="multipart/form-data">
+        <h1 id="form-head">Edit <%= hall.title%> Hall</h1>
+        <div class="form-group">
+            <label for="hallname">Hallname</label>
+            <input class="form-control" name="halls[title]" id="hallname" type="text" value="<%=hall.title%>">
+        </div>
+        <div class="form-group">
+            <label for="image">Image</label>
+            <input name="image" type="file" accept="image/*">
+        </div>
+        <div class="form-group">
+            <label for="price">Price</label>
+            <input class="form-control" name="halls[price]" type="number" value="<%=hall.price%>">
+        </div>
+        <div class="form-group">
+            <label for="price">Hall description</label>
+            <textarea name="halls[description]" class="form-control" required> <%=hall.description%> </textarea>
+        </div>
+        <div class="submit-button">
+            <input type="submit" class="btn btn-dark" value="Edit Hall">
+        </div>
+    </form>
+</div>
+<% include ../partials/footer %>

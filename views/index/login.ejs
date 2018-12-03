@@ -1,0 +1,23 @@
+<% include ../partials/header %>
+
+    <form id="form" name="form" method="post" action="/login">
+        <h1 id="form-head">Login</h1>
+        <label for="username">Username</label>
+        <div class="form-group">
+                <input class="form-control" name="username" id="username" type="text" placeholder="username" required>
+        </div>
+        <label for="password">Password</label>
+        <div class="form-group">
+                <input class="form-control" name="password" id="password" type="password" placeholder="password" required>
+        </div>
+        <div class="submit-button">
+            <input type="submit" class="btn btn-dark submit-button" name="submit" value="login">
+            <span> <a href="/register">Not Registered? </a> | <a href="/forgot">Forgot your password?</a></span>
+        </div>
+    </form>
+</div>
+
+
+<% include ../partials/footer %>
+
+
